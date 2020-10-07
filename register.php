@@ -40,18 +40,18 @@
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <h1 class="register-heading">Get Quote now</h1>
+                                <h1 class="register-heading">Get Quote now for School</h1>
                                 <div class="row register-form">
                                     <div class="col-md-6">
                                         <form action="schoolregister.php" method="POST">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name *" value="" required />
+                                            <input type="text" class="form-control" name="firstnameschool" placeholder="First Name *" value="" required />
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Last Name *" value="" required />
+                                            <input type="text" class="form-control" name="lastnameschool" placeholder="Last Name *" value="" required />
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="School Name *" value="" required />
+                                            <input type="text" class="form-control" name="schoolname" placeholder="School Name *" value="" required />
                                         </div>
                                         
                                        
@@ -61,11 +61,18 @@
                                             <input type="email" class="form-control" name="email" placeholder="Your Email *" value="" required />
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" required />
+                                            <input type="tel" minlength="10" maxlength="10"  class="form-control" name="schoolphone" placeholder="Your Phone *" value="" required />
                                         </div>
                                         
                                         <div class="form-group">
-                                            <textarea class="form-control" placeholder="What do you want to know about" value=""></textarea>
+                                        <select name="schoolinterest" id="" class="form-control">
+                                                <option value="nil">What are you interested in learning</option>
+                                                <option value="Web Development">Web Development</option>
+                                                <option value="Python and Data Sciences">Python and Data Sciences</option>
+                                                <option value="JAVA">JAVA</option>
+                                                <option value="Android">Android</option>
+                                                <option value="All">All</option>
+                                            </select>
                                         </div>
                                         <input type="submit" class="btnRegister"  name="school" value="Submit" />
                                     </div>
@@ -118,6 +125,7 @@
                                                 <option value="Python and Data Sciences">Python and Data Sciences</option>
                                                 <option value="JAVA">JAVA</option>
                                                 <option value="Android">Android</option>
+                                                <option value="All">All</option>
                                             </select>
 
                                             <input type="submit" class="btnRegister" name="student" value="Submit"/>
@@ -125,7 +133,7 @@
                                       
                                         
                                     </div>
-</form>
+                                        </form>
                                 </div>
                             </div>
                         </div>
@@ -134,9 +142,11 @@
     
             </div>
         </div>
-       <?php
+        <?php
        include("includes/footer.php")
        ?>
+</div>
+      
 
 
   
