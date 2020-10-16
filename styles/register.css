@@ -1,5 +1,5 @@
 .register1{
-    background-color: #1a1a1a;
+    background-color: #ffff;
 background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     /* background: linear-gradient(90deg, rgba(175,125,4,1) 0%, rgba(255,182,6,1) 35%, rgba(249,217,141,1) 100%); */
     margin-top: 3%;
@@ -18,7 +18,7 @@ background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     background: #f8f9fa;
     font-weight: bold;
     color: #383d41;
-    margin-top: 30%;
+    margin-top: 40%;
     margin-bottom: 3%;
     cursor: pointer;
 }
@@ -31,7 +31,7 @@ background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     margin-top: 50%;
     margin-bottom: 5%;
     width: 80%;
-    height: 50%;
+    height: 60%;
     -webkit-animation: mover 2s infinite  alternate;
     animation: mover 1s infinite  alternate;
 }
@@ -53,8 +53,8 @@ background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     margin-top: 10%;
 }
 .btnRegister{
-    float: right;
-    margin-top: 10%;
+    float: left;
+    margin-top: 15%;
     border: none;
     border-radius: 1.5rem;
     padding: 2%;
